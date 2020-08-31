@@ -8,11 +8,12 @@ let vapidKeys = {
 push.setVapidDetails('mailto:test@code.com', vapidKeys.publicKey, vapidKeys.privateKey)
 
 let sub = {
-    endpoint: "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABfT…GOaXD8OnxOPrnHlvmB0WBLTkryFb8A62X2PfhVTaUBV3fE82p5Kz2Z3iXt4U",
+    endpoint: "https://fcm.googleapis.com/fcm/send/edvuDO_txF0:APA91bF_Li2PIsF9uUg6kMfG9n53Uv3Qq719KuM6tQdCqr-YnBrCEiYPzxVS_rHCuAu9K0p5fXYmDGASFhjvkxnHrU_zJd_WNSC7n6Ja1urPg2UiJdrnsld7Z-j6ATn_m3WgvIIcxE4X",
+    expirationTime: null,
     keys: {
-        auth: "-PuT1IooBCFuwy25ankLPg",
-        p256dh: "BKvGOGfDwzjLXRM_KA8MdKKCp_SjwdfKpQggEB9nByY4I23Jd6SwzD9TtBNfW_QkQTBcjhoOe9VDb2-GpS9pHYY"
+        p256dh: "BE34LCEAUGPscwbG4FZDIOidoGSA0XzD2CAhVfxFyBLywfxMsF5vHwiRCnACM8MQZPVvzB40JRjXrPl2gkH0XmU",
+        auth: "ri3VEaok9VkRzUo_roaewg"
     }
 };
 
-push.sendNotification(sub, 'test message')
+push.sendNotification(sub, 'test message');
